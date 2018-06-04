@@ -29,7 +29,7 @@ public List<String> files=new ArrayList<String>();
 	}
 	
 	public static void main(String[] args) throws Exception{
-		CLibraryTextClassifier.Instance.DANClassifierInit("");
+		CLibraryTextClassifier.Instance.TextClassifierInit("");
 		CLibraryTextClassifier.Instance.NewTrain(false,1,50);
 		String fPath="train";
 		Train test=new Train();

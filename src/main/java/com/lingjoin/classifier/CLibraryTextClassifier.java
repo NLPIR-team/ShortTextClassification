@@ -7,7 +7,7 @@ public interface CLibraryTextClassifier extends Library{
 
 	CLibraryTextClassifier Instance = (CLibraryTextClassifier) Native.loadLibrary("TextClassification", CLibraryTextClassifier.class);
 
-    public int DANClassifierInit(String datafile);
+    public int TextClassifierInit(String datafile);
     void NewTrain(boolean increament,int ngram,int dim);
     public void AddString(String classname,String content);
     void Completed();

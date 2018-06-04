@@ -9,7 +9,7 @@ import com.lingjoin.classifier.train.Train;
 public class Test {
 
 	public static void main(String[] args) throws Exception{
-		CLibraryTextClassifier.Instance.DANClassifierInit("");
+		CLibraryTextClassifier.Instance.TextClassifierInit("");
 		CLibraryTextClassifier.Instance.LoadModel();
 		String fPath="train";
 		Train test=new Train();
